@@ -39,22 +39,41 @@ function viewCart() {
 
 function total() {
   // write your code here
+<<<<<<< HEAD
   var subtotal = 0;
   for (var i = 0; i < cart.length; i++){
     subtotal += cart[i].itemPrice;
   }
   return subtotal;
+=======
+  var total = 0;
+  for (var i = 0; i < cart.length; i++){
+    total += cart[i].itemPrice;
+  }
+  return total;
+>>>>>>> 14b6ed7ab81f3e4be9740fda84b0f8ce5a28dbab
 }
 
 function removeFromCart(item) {
   // write your code here
     for (var i = 0; i < cart.length; i++){
+<<<<<<< HEAD
       if (cart[i].itemName === item){
         cart.splice(i, 1);
         return cart;
   }
  } 
   return `That item is not in your cart.`;
+=======
+      if (cart[i].itemName == item){
+        cart.splice( 1);
+      }
+      else {
+        return `That item is not in your cart.`;
+      }
+    }
+    return cart;
+>>>>>>> 14b6ed7ab81f3e4be9740fda84b0f8ce5a28dbab
 }
 function placeOrder(cardNumber) {
   // write your code here
